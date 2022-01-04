@@ -16,7 +16,6 @@ package-lock.json
 /build
 
 # misc
-config.js
 npm-debug.log*
 .DS_Store
 .env.local
