@@ -26,12 +26,12 @@ app.use("/users", usersRoutes);
 app.use("/services", servicesRoutes);
 app.use("/sales", salesRoutes);
 
-// if(process.env.NODE_ENV === "production"){
-//     app.use(express.static('build'));
-//     app.get('*', (req, res) => {
-//         req.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-//     })
-// }
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static('build'));
+    app.get('*', (req, res) => {
+        req.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+    })
+}
 
 
 
