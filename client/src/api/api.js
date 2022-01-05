@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:3001";
-const BASE_URL = process.env.REACT_APP_BASE_URL || "https://boonelist.herokuapp.com";
+const BASE_URL = process.env.REACT_APP_BASE_URL || "https://boonelist.herokuapp.com/";
 
 /** API Class.
  *
@@ -18,7 +18,7 @@ class BoonelistApi {
     static async request(endpoint, data = {}, method = "get") {
         console.debug("API Call:", endpoint, data, method);
 
-        const url = `${BASE_URL}/${endpoint}`;
+        const url = `${BASE_URL}${endpoint}`;
         const headers = { Authorization: `Bearer ${BoonelistApi.token}` };
         const params = (method === "get")
             ? data
@@ -136,6 +136,6 @@ class BoonelistApi {
 
 }
 
-// BoonelistApi.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RhZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYyMjcyNTg0Mn0.nJsOKBaufn81VX7rL70oev_KemBmKE5sSwk6S3Ax_wk"
+BoonelistApi.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RhZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYyMjcyNTg0Mn0.nJsOKBaufn81VX7rL70oev_KemBmKE5sSwk6S3Ax_wk"
 
 export default BoonelistApi
