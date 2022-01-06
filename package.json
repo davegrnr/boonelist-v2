@@ -9,6 +9,9 @@
     "server": "cd server && nodemon server.js",
     "test": "jest -i"
   },
+  "engines": {
+    "node": "14.15.5"
+  },
   "author": "david garner",
   "license": "ISC",
   "dependencies": {
