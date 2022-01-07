@@ -1,5 +1,25 @@
 # BooneList
 
+## Logged Out/In Homepage
+![image](https://user-images.githubusercontent.com/62620504/148597385-bf934f6a-862a-41f3-be25-d99aca44ffca.png)
+![image](https://user-images.githubusercontent.com/62620504/148597520-f8160d2c-90ec-4d16-aedf-4d4f62423fe0.png)
+
+
+## Sign Up
+![image](https://user-images.githubusercontent.com/62620504/148597440-c2fd3a7d-65fe-47db-9e11-1b110fb4a8f4.png)
+
+## Component List
+### "Owned" Components Have Remove Button
+![image](https://user-images.githubusercontent.com/62620504/148597712-1aee4fd9-8f70-479c-b010-f2b7a056341f.png)
+
+## Component Detail
+### "Owned" Comments Have Remove Button
+![image](https://user-images.githubusercontent.com/62620504/148597932-6a888bbf-508a-41a6-85b9-88774c9e86aa.png)
+
+## Change Profile Form
+![image](https://user-images.githubusercontent.com/62620504/148597977-525a6ac6-fea5-41f7-aaf5-d986b3cb9550.png)
+
+
 ## Initialization
  - boonelist-client/ 
     - "npm install"
