@@ -17,8 +17,6 @@ const morgan = require("morgan");
 
 const app = express();
 
-app.use(express.static(path.join('client/build')));
-
 app.use(cors());
 app.use(express.json());
 app.use(morgan("tiny"));
@@ -29,10 +27,9 @@ app.use("/users", usersRoutes);
 app.use("/services", servicesRoutes);
 app.use("/sales", salesRoutes);
 
-
 if(process.env.NODE_ENV === "production"){
     app.get('*', (req, res) => {
-        res.sendFile(path.join('/client/build/index.html'))
+        res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
     })
 }
 
