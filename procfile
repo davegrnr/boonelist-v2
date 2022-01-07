@@ -1,1 +1,1 @@
-web: npm run build-client && node public/index.bundle.js
+web: cd server && node server.js
