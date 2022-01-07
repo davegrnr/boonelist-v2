@@ -4,7 +4,7 @@ import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
 import "./index.css";
 import App from "./App";
-// import * as serviceWorker from "./serviceWorker";
+import * as serviceWorker from "./serviceWorker";
 
 const options = {
     position: positions.TOP_CENTER,
