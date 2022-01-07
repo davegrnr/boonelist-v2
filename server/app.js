@@ -29,7 +29,7 @@ app.use("/sales", salesRoutes);
 
 if(process.env.NODE_ENV === "production"){
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'build', 'index.html'))
+        req.sendFile(path.join(__dirname, 'build', 'index.html'))
     })
 }
 
