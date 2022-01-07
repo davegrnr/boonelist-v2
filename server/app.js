@@ -27,9 +27,11 @@ app.use("/users", usersRoutes);
 app.use("/services", servicesRoutes);
 app.use("/sales", salesRoutes);
 
+app.use(express.static(path.join(__dirname, 'client/build')))
+
 if(process.env.NODE_ENV === "production"){
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'build', 'index.html'))
+        res.sendFile(path.join(__dirname, '/client/build/index.html'))
     })
 }
 

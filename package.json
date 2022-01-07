@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "client": "cd client && npm start",
-    "server": "cd server && nodemon server.js",
+    "server": "cd server && npm start",
     "test": "jest -i"
   },
   "engines": {
